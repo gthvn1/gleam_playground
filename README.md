@@ -1,2 +1,3 @@
-# gleam_playground
-Give a try
+# Gleam Playground
+
+Let's try [Gleam](https://gleam.run/)
