@@ -7,6 +7,11 @@ pub fn main() {
 }
 
 // gleeunit test functions end in `_test`
+pub fn hello_mysub_test() {
+  hello.mysub(10, 32)
+  |> should.equal(-22)
+}
+
 pub fn hello_myadd_test() {
   hello.myadd(10, 32)
   |> should.equal(42)
