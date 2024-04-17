@@ -10,7 +10,7 @@ case $1 in
   *) CMD="gleam test"  ;;
 esac
 
-inotifywait -q -m -r -e modify src | while read -r _DIRECTORY EVENT _FILE; do
+inotifywait -q -m -r -e modify src test | while read -r _DIRECTORY EVENT _FILE; do
   # echo $DIRECTORY $EVENT $FILE
   case $EVENT in
     MODIFY*)
